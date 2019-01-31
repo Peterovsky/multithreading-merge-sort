@@ -6,7 +6,8 @@ public class Main {
 
     // Method that check if the array is sorted
     private static boolean isArraySorted(int[] array) {
-        for (int i = 0; i < array.length - 1; i++) {
+        int arrayLength = array.length;
+        for (int i = 0; i < arrayLength - 1; i++) {
             if (array[i] > array[i + 1]) {
                 return false;
             }
@@ -22,7 +23,8 @@ public class Main {
         int availableThreads = getRuntime().availableProcessors(); // Amount of available processors
 
         // Filling array with random integers in range 0-99
-        for (int i = 0; i < example.length; i++) {
+        int exampleLength = example.length;
+        for (int i = 0; i < exampleLength; i++) {
             example[i] = rand.nextInt(100);
         }
 
